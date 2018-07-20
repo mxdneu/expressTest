@@ -23,9 +23,9 @@ const getJSON = function(url) {
 };
 
 getJSON("/api/testdata").then(function(json) {
-  console.log('Contents: ' + json);
+  console.log('Contents: ' + json.data.name);
 }, function(error) {
   console.error('出错了', error);
 });
 
-console.log('通了');
+
